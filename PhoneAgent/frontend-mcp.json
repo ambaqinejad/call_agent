@@ -1,0 +1,46 @@
+{
+    "version":  1,
+    "servers":  {
+                    "phone":  {
+                                  "tools":  {
+                                                "answer":  {
+                                                               "timeoutMs":  15000,
+                                                               "enabled":  true
+                                                           },
+                                                "get_call_status":  {
+                                                                        "timeoutMs":  15000,
+                                                                        "enabled":  true
+                                                                    },
+                                                "ping":  {
+                                                             "timeoutMs":  15000,
+                                                             "enabled":  true
+                                                         },
+                                                "dial":  {
+                                                             "timeoutMs":  20000,
+                                                             "enabled":  true
+                                                         },
+                                                "get_recent_call_events":  {
+                                                                               "timeoutMs":  15000,
+                                                                               "enabled":  true
+                                                                           },
+                                                "hangup":  {
+                                                               "timeoutMs":  15000,
+                                                               "enabled":  true
+                                                           }
+                                            },
+                                  "transport":  {
+                                                    "args":  [
+                                                                 "C:\\Users\\pc\\Desktop\\call_agent_modem\\PhoneAgent\\phone_mcp_server.py"
+                                                             ],
+                                                    "env":  {
+                                                                "PHONE_SERVICE_URL":  "http://127.0.0.1:8787",
+                                                                "PHONE_API_TOKEN":  "123456789123456789123456789"
+                                                            },
+                                                    "command":  "C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                                                    "type":  "stdio"
+                                                },
+                                  "connectTimeoutMs":  30000,
+                                  "enabled":  true
+                              }
+                }
+}

@@ -3,3 +3,4 @@ sounddevice
 soundfile
 scipy
 numpy
+mcp[cli]
